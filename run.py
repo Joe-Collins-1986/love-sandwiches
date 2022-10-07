@@ -31,16 +31,13 @@ def validate_data(values):
     Raise VaulueError if the string can not be converted to int,
     or if there are not exactly 6 entered values.
     """
-    int_list = []
-
     try:
+        int_list = [int(value) for value in values]
         if len(values) != 6:
             raise ValueError(
                 f"Exactly 6 values required, you provided {len(values)}"
             )
-
-        for num in values:
-            int_list.append(int(num))
+            
         print(int_list)
 
     except ValueError as e:
