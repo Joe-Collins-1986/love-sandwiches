@@ -24,7 +24,7 @@
             }
         
         /*style background image*/
-        #image {
+        #image-container {
                 height: 100vh;
                 left: 0;
                 position: fixed;
@@ -32,6 +32,13 @@
                 width: 100%;
                 z-index: -10;    
             }
+
+        img {
+            height: 100%;
+            left: 50%;
+            position: relative;
+            transform: translate(-50%, 0);
+        }
 
         /**
         * Default styles for xterm.js
@@ -189,7 +196,9 @@
 
 <body>
     <main id="content-container">
-        <img id="image" src="/views/rosalie-barley-9y2QXrYeTRI-unsplash.jpg" alt="">
+        <div id="image-container">
+            <img src="/views/rosalie-barley-9y2QXrYeTRI-unsplash.jpg" alt="">
+        </div>
         @{body}
     </main>
 
