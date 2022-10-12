@@ -23,6 +23,15 @@
                 align-items: center;
             }
         
+        /*style background image*/
+        #image {
+                height: 100vh;
+                left: 0;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: -10;    
+            }
 
         /**
         * Default styles for xterm.js
@@ -180,7 +189,7 @@
 
 <body>
     <main id="content-container">
-        <img src="/views/rosalie-barley-9y2QXrYeTRI-unsplash.jpg" alt="">
+        <img id="image" src="/views/rosalie-barley-9y2QXrYeTRI-unsplash.jpg" alt="">
         @{body}
     </main>
 
